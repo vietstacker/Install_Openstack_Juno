@@ -675,7 +675,7 @@ service nova-conductor restart
 
 - *Restart neutron*
 
-`# service neutron-server restart``
+`# service neutron-server restart`
 
 <a name="1.12"></a>
 ####1.12 Cài đặt Cinder
