@@ -79,8 +79,13 @@ Bài viết này tham khảo tại địa chỉ http://docs.openstack.org/juno/i
 
 <a name="12"></a>  
 #####1.2 Upgrade các packages hệ thống.
+``` 
+# apt-get update -y && apt-get dist-upgrade -y
+```
 
-`# apt-get update -y && apt-get dist-upgrade -y`
+Sau đó khởi động lại máy và thực hiện tiếp các bước dưới
+
+`init 6`
 
 <a name="13"></a>
 #####1.3.	Cài đặt NTP service.
