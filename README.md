@@ -463,6 +463,11 @@ filesystem_store_datadir = /var/lib/glance/images/
 ...
 notification_driver = noop
 verbose = True
+
+rabbit_host = 10.10.10.200
+
+rabbit_password = osjuno123a@
+
 ```
 
 - *Edit file* `vi /etc/glance/glance-registry.conf`
@@ -487,6 +492,10 @@ flavor = keystone
 ...
 notification_driver = noop
 verbose = True
+
+rabbit_host = 10.10.10.200
+
+rabbit_password = osjuno123a@
 ```
 
 - *Xóa database mặc định của Glance* `rm -f /var/lib/glance/glance.sqlite`
