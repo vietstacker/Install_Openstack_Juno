@@ -257,6 +257,9 @@ verbose = True
 [database]
 ...
 connection = mysql://keystone:osjuno123a@@10.10.10.200/keystone
+
+# connection=sqlite:////var/lib/keystone/keystone.db
+
 [token]
 ...
 provider = keystone.token.providers.uuid.Provider
