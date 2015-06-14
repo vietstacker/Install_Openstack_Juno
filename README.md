@@ -76,10 +76,9 @@ Bài viết này tham khảo tại địa chỉ http://docs.openstack.org/juno/i
 ```
 root@controller:~# cat /etc/hosts
 127.0.0.1       localhost
-127.0.1.1       controller
-10.10.10.140    controller
-10.10.10.141    network
-10.10.10.142    compute1
+10.10.10.200   controller
+10.10.10.201   network
+10.10.10.202  compute1
 
 # The following lines are desirable for IPv6 capable hosts
 ::1     localhost ip6-localhost ip6-loopback
