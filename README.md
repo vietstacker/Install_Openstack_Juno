@@ -72,6 +72,27 @@ Bài viết này tham khảo tại địa chỉ http://docs.openstack.org/juno/i
 <a name="ctl"></a>
 
 #### Đặt IP và hostname cho máy chủ controller
+- Khai báo địa chỉ các node trong file /etc/hosts
+```
+root@controller:~# cat /etc/hosts
+127.0.0.1       localhost
+127.0.1.1       controller
+10.10.10.140    controller
+10.10.10.141    network
+10.10.10.142    compute1
+
+# The following lines are desirable for IPv6 capable hosts
+::1     localhost ip6-localhost ip6-loopback
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
+```
+
+- Đặt tên cho máy controller trong file /etc/hostname
+```
+root@controller:~# cat /etc/hostname
+controller
+root@controller:~#
+```
 
 ####1.1 Enable OpenStack repository.
 ```sh
