@@ -70,6 +70,9 @@ Bài viết này tham khảo tại địa chỉ http://docs.openstack.org/juno/i
 ##I. CONTROLLER NODE
 
 <a name="ctl"></a>
+
+#### Đặt IP và hostname cho máy chủ controller
+
 ####1.1 Enable OpenStack repository.
 ```sh
 # apt-get install ubuntu-cloud-keyring
