@@ -160,8 +160,6 @@ Cấu hình để cho phép các node khác trong mạng có thể truy cập đ
 
 `vi /etc/mysql/my.cnf`
 
-<<<<<<< HEAD
-=======
 Tại section `[mysqld]` Sửa dòng `bind-address = 127.0.0.1` thành đoạn dưới:
 
 ```sh
@@ -242,7 +240,7 @@ Keystone - Identity Service là một project trong Openstack, có nhiệm vụ 
 `
 cp /etc/keystone/keystone.conf /etc/keystone/keystone.conf.bak
 rm /etc/keystone/keystone.conf
-cat /etc/keystone/keystone.conf.bak | grep -v ^# | grep -v ^# > /etc/keystone/keystone.conf
+cat /etc/keystone/keystone.conf.bak | grep -v ^# | grep -v ^$ > /etc/keystone/keystone.conf
 `
 
 `# vi /etc/keystone/keystone.conf`
