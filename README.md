@@ -238,6 +238,13 @@ Keystone - Identity Service là một project trong Openstack, có nhiệm vụ 
 
 - Cấu hình Keystone
 
+ + Sao lưu file keystone 
+`
+cp /etc/keystone/keystone.conf /etc/keystone/keystone.conf.bak
+rm /etc/keystone/keystone.conf
+cat /etc/keystone/keystone.conf.bak | grep -v ^# | grep -v ^# > /etc/keystone/keystone.conf
+`
+
 `# vi /etc/keystone/keystone.conf`
 
 ```sh
