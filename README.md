@@ -164,7 +164,6 @@ Cấu hình để cho phép các node khác trong mạng có thể truy cập đ
 =======
 Tại section `[mysqld]` Sửa dòng `bind-address = 127.0.0.1` thành đoạn dưới:
 
->>>>>>> hocchudong/master
 ```sh
 bind-address = 0.0.0.0
 default-storage-engine = innodb
