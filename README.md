@@ -1091,7 +1091,8 @@ Sửa dòng
 
 ####4. Download và cài đặt Nova
 
-`apt-get install nova-compute sysfsutils -y`
+`apt-get install nova-compute sysfsutils libguestfs-tools -y`
+
 
 `vi /etc/nova/nova.conf`
 
@@ -1108,7 +1109,6 @@ vnc_enabled = True
 vncserver_listen = 0.0.0.0
 vncserver_proxyclient_address = 10.10.10.202
 novncproxy_base_url = http://10.10.10.200:6080/vnc_auto.html
-verbose = True
 
 [keystone_authtoken]
 ...
